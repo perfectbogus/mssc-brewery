@@ -20,4 +20,9 @@ public class BeerServiceImpl implements BeerService {
     public BeerDto saveNewBeer(BeerDto beerDto) {
         return BeerDto.builder().id(UUID.randomUUID()).build();
     }
+
+    @Override
+    public void updateBeer(UUID beerId, BeerDto beerDto) {
+          // todo: implement would add a real implementation to update beer
+    }
 }
